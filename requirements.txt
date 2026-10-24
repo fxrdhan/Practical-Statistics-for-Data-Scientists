@@ -1,5 +1,5 @@
 # Notebooks were executed with: Python 3.12.3, NumPy 2.5.4, pandas 3.1.0, SciPy 1.16.3,
-# statsmodels 0.15.0, scikit-learn 1.9.1, seaborn 0.13.2, Matplotlib 3.11.2, wquantiles 0.6, pygam 0.12.0, dmba 0.2.4, imbalanced-learn 0.14.2, xgboost 3.4.1
+# statsmodels 0.15.0, scikit-learn 1.9.1, seaborn 0.13.2, Matplotlib 3.11.2, wquantiles 0.6, pygam 0.12.0, dmba 0.2.4, imbalanced-learn 0.14.2, xgboost 3.4.1, prince 0.22.2, adjustText 1.4.0
 # The code of the book was written for older releases; the lower bounds below are the oldest
 # versions on which the code is expected to work, the versions above are the ones actually tested.
 numpy>=1.26
@@ -14,4 +14,6 @@ pygam>=0.9           # Chapter 4: generalized additive models
 dmba>=0.2            # Chapter 4: stepwise selection; Chapter 5: classification summary; Chapter 6: tree plot (needs the program Graphviz, `dot`)
 imbalanced-learn>=0.11  # Chapter 5: SMOTE and ADASYN
 xgboost>=1.7        # Chapter 6: boosting
+prince             # Chapter 7: correspondence analysis (tested with 0.22.2)
+adjustText         # Chapter 7: labels of the correspondence analysis plot (tested with 1.4.0)
 jupyter

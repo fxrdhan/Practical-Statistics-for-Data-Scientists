@@ -7,7 +7,7 @@ This repository reproduces, chapter by chapter, the code of **_Practical Statist
 1. **summarizes** every section of the chapter in the author's own words,
 2. **explains the theory** behind the concepts (definitions, math, and the reasons a method behaves as it does),
 3. **reproduces** the book's Python code, runs it on current library versions and analyzes every output, and
-4. adds **extra experiments**, written for this repository, that turn statements the book makes in prose into runnable code (simulations, proofs by numbers, alternative methods).
+4. in chapters 1 to 3, adds **extra experiments**, written for this repository, that turn statements the book makes in prose into runnable code (simulations, proofs by numbers, alternative methods).
 
 The code of the book is taken from its official repository, `gedeck/practical-statistics-for-data-scientists`; everything else (summaries, theory, analyses, extra experiments) was written for this repository.
 
@@ -23,7 +23,7 @@ The code of the book is taken from its official repository, `gedeck/practical-st
 | 04 | Regression and Prediction | Done | [Chapter 4 notebook](Chapter_04_Regression_and_Prediction/Chapter_04_Regression_and_Prediction.ipynb) · [summary](Chapter_04_Regression_and_Prediction/README.md) |
 | 05 | Classification | Done | [Chapter 5 notebook](Chapter_05_Classification/Chapter_05_Classification.ipynb) · [summary](Chapter_05_Classification/README.md) |
 | 06 | Statistical Machine Learning | Done | [Chapter 6 notebook](Chapter_06_Statistical_Machine_Learning/Chapter_06_Statistical_Machine_Learning.ipynb) · [summary](Chapter_06_Statistical_Machine_Learning/README.md) |
-| 07 | Unsupervised Learning | Planned | |
+| 07 | Unsupervised Learning | Done | [Chapter 7 notebook](Chapter_07_Unsupervised_Learning/Chapter_07_Unsupervised_Learning.ipynb) · [summary](Chapter_07_Unsupervised_Learning/README.md) |
 
 ---
 
@@ -53,6 +53,10 @@ Predicting a category through the probability of each class. The chapter covers 
 Data-driven methods that assume little about the data and predict well. The chapter covers **K-nearest neighbors** (distance metrics, standardization, KNN as a feature engine), **tree models** (recursive partitioning, Gini impurity and entropy, stopping the tree), **bagging and the random forest** (bootstrap samples, the out-of-bag estimate, variable importance by accuracy decrease and by Gini decrease) and **boosting** with XGBoost (regularization, hyperparameters and cross-validation).
 *Key tools:* `scikit-learn`, `xgboost`, `dmba` (with Graphviz for the tree plot), `seaborn`.
 
+### Chapter 7 — Unsupervised Learning
+Finding structure without an outcome to predict. The chapter covers **principal components analysis** (loadings, the screeplot, interpreting the components) and **correspondence analysis** for tables of counts, **K-means clustering** (the algorithm, interpreting the clusters, the elbow plot), **hierarchical clustering** (the dendrogram and the measures of dissimilarity: single, average, complete and Ward linkage), **model-based clustering** (mixtures of normal distributions fitted by EM, selection by BIC) and the preparation of the variables for distance-based methods (**scaling**, dominant variables, Gower's distance, the problems of mixed data).
+*Key tools:* `scikit-learn`, `scipy.cluster.hierarchy`, `prince`, `adjustText`, `seaborn`.
+
 ---
 
 ## How to run
@@ -64,13 +68,13 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Every notebook starts with a setup cell that prints the versions of the libraries and **downloads the datasets it needs** from the official repository into a folder called `data` next to the notebook (the only use of the network). Each notebook also has an *Open in Colab* badge; in Colab the setup cell installs the one library that Colab does not ship.
+Every notebook starts with a setup cell that prints the versions of the libraries and **downloads the datasets it needs** from the official repository into a folder called `data` next to the notebook (the only use of the network). Each notebook also has an *Open in Colab* badge; in Colab the setup cell installs the extra libraries of the chapter when they are missing (`wquantiles`, `pygam`, `dmba`, `imbalanced-learn`, `prince` or `adjustText`, depending on the chapter). The tree plot of chapter 6 needs the program Graphviz (`dot`) outside Python; the notebook says how to install it.
 
 ## How the notebooks are organized
 
-Every chapter notebook has the same structure, section by section: **Summary**, **Theory**, **Book code** with an **output analysis**, and **Extra experiments** with an analysis of each. A decision guide, a chapter summary with key takeaways, notes on the differences between the book's code and current library versions, and references close the notebook.
+Every chapter notebook has the same structure, section by section: **Summary**, **Theory**, and **Book code** with an **output analysis**. A chapter summary with key takeaways, notes on the differences between the book's code and current library versions, and references close the notebook. Chapters 1 to 3 also have **extra experiments** with an analysis of each, and a decision guide; chapters 4 to 7 keep to the book's code, with the theory and the analyses.
 
-Every code cell starts with a label: `# BOOK CODE` marks code from the official repository, reproduced as it is (a change needed to run it is marked in the cell), and `# EXTRA` marks code written for this repository. The first code cell, `# SETUP`, is not part of the book.
+Every code cell starts with a label: `# BOOK CODE` marks code from the official repository, reproduced as it is (a change needed to run it is marked `# CHANGED` in the cell), `# EXTRA` marks the experiments written for this repository (chapters 1 to 3), and `# NOT IN THE BOOK` marks a line or a cell added to make a run repeatable (a seed) or to print a number that the book only draws. The first code cell, `# SETUP`, is not part of the book.
 
 ## Data and license
 
