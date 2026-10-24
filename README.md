@@ -18,7 +18,7 @@ The code of the book is taken from its official repository, `gedeck/practical-st
 | # | Chapter | Status | Notebook |
 |---|---|---|---|
 | 01 | Exploratory Data Analysis | Done | [Chapter 1 notebook](Chapter_01_Exploratory_Data_Analysis/Chapter_01_Exploratory_Data_Analysis.ipynb) · [summary](Chapter_01_Exploratory_Data_Analysis/README.md) |
-| 02 | Data and Sampling Distributions | Planned | |
+| 02 | Data and Sampling Distributions | Done | [Chapter 2 notebook](Chapter_02_Data_and_Sampling_Distributions/Chapter_02_Data_and_Sampling_Distributions.ipynb) · [summary](Chapter_02_Data_and_Sampling_Distributions/README.md) |
 | 03 | Statistical Experiments and Significance Testing | Planned | |
 | 04 | Regression and Prediction | Planned | |
 | 05 | Classification | Planned | |
@@ -32,6 +32,10 @@ The code of the book is taken from its official repository, `gedeck/practical-st
 ### Chapter 1 — Exploratory Data Analysis
 Look at the data before modelling it. The chapter covers the types of **structured data** and the rectangular table that holds them, the estimates of **location** (mean, trimmed mean, median, weighted versions) and of **variability** (standard deviation, IQR, MAD), the pictures of a **distribution** (percentiles, boxplot, frequency table, histogram, density plot), the summaries of **binary and categorical** data, **correlation** (matrix, heatmap, ellipse plot, scatterplot) and the tools for **two or more variables** (hexagonal binning, contour plots, contingency tables, violin plots, conditioning with facets).
 *Key tools:* `pandas`, `scipy.stats.trim_mean`, `statsmodels.robust`, `wquantiles`, `seaborn`, `Matplotlib`.
+
+### Chapter 2 — Data and Sampling Distributions
+How far can a sample be trusted? The chapter covers **random sampling and sample bias**, **selection bias** and regression to the mean, the **sampling distribution of a statistic** (central limit theorem, standard error), the **bootstrap**, **confidence intervals**, and the distributions used as models: the **normal** distribution with QQ-plots, **long-tailed** distributions, Student's **t**, the **binomial**, the **chi-square**, the **F**, and the **Poisson** family with the exponential and the Weibull distribution.
+*Key tools:* `scipy.stats`, `sklearn.utils.resample`, `scipy.stats.bootstrap`, `pandas`, `Matplotlib`.
 
 ---
 
