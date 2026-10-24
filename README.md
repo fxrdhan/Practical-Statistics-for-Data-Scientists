@@ -19,7 +19,7 @@ The code of the book is taken from its official repository, `gedeck/practical-st
 |---|---|---|---|
 | 01 | Exploratory Data Analysis | Done | [Chapter 1 notebook](Chapter_01_Exploratory_Data_Analysis/Chapter_01_Exploratory_Data_Analysis.ipynb) · [summary](Chapter_01_Exploratory_Data_Analysis/README.md) |
 | 02 | Data and Sampling Distributions | Done | [Chapter 2 notebook](Chapter_02_Data_and_Sampling_Distributions/Chapter_02_Data_and_Sampling_Distributions.ipynb) · [summary](Chapter_02_Data_and_Sampling_Distributions/README.md) |
-| 03 | Statistical Experiments and Significance Testing | Planned | |
+| 03 | Statistical Experiments and Significance Testing | Done | [Chapter 3 notebook](Chapter_03_Statistical_Experiments_and_Significance_Testing/Chapter_03_Statistical_Experiments_and_Significance_Testing.ipynb) · [summary](Chapter_03_Statistical_Experiments_and_Significance_Testing/README.md) |
 | 04 | Regression and Prediction | Planned | |
 | 05 | Classification | Planned | |
 | 06 | Statistical Machine Learning | Planned | |
@@ -36,6 +36,10 @@ Look at the data before modelling it. The chapter covers the types of **structur
 ### Chapter 2 — Data and Sampling Distributions
 How far can a sample be trusted? The chapter covers **random sampling and sample bias**, **selection bias** and regression to the mean, the **sampling distribution of a statistic** (central limit theorem, standard error), the **bootstrap**, **confidence intervals**, and the distributions used as models: the **normal** distribution with QQ-plots, **long-tailed** distributions, Student's **t**, the **binomial**, the **chi-square**, the **F**, and the **Poisson** family with the exponential and the Weibull distribution.
 *Key tools:* `scipy.stats`, `sklearn.utils.resample`, `scipy.stats.bootstrap`, `pandas`, `Matplotlib`.
+
+### Chapter 3 — Statistical Experiments and Significance Testing
+Is a difference real, or could chance have produced it? The chapter covers the **A/B test** and random assignment, **hypothesis tests**, **resampling** with the permutation test, **statistical significance and p-values** with the two types of error, the **t-test**, **multiple testing**, **degrees of freedom**, **ANOVA** and the F-statistic, the **chi-square test** and Fisher's exact test, the **multi-arm bandit** algorithm, and **power and sample size**.
+*Key tools:* `scipy.stats`, `statsmodels` (ANOVA tables, power analysis, multiple-testing corrections), `pandas`, `Matplotlib`.
 
 ---
 
