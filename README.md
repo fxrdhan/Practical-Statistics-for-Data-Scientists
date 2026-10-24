@@ -22,7 +22,7 @@ The code of the book is taken from its official repository, `gedeck/practical-st
 | 03 | Statistical Experiments and Significance Testing | Done | [Chapter 3 notebook](Chapter_03_Statistical_Experiments_and_Significance_Testing/Chapter_03_Statistical_Experiments_and_Significance_Testing.ipynb) · [summary](Chapter_03_Statistical_Experiments_and_Significance_Testing/README.md) |
 | 04 | Regression and Prediction | Done | [Chapter 4 notebook](Chapter_04_Regression_and_Prediction/Chapter_04_Regression_and_Prediction.ipynb) · [summary](Chapter_04_Regression_and_Prediction/README.md) |
 | 05 | Classification | Done | [Chapter 5 notebook](Chapter_05_Classification/Chapter_05_Classification.ipynb) · [summary](Chapter_05_Classification/README.md) |
-| 06 | Statistical Machine Learning | Planned | |
+| 06 | Statistical Machine Learning | Done | [Chapter 6 notebook](Chapter_06_Statistical_Machine_Learning/Chapter_06_Statistical_Machine_Learning.ipynb) · [summary](Chapter_06_Statistical_Machine_Learning/README.md) |
 | 07 | Unsupervised Learning | Planned | |
 
 ---
@@ -48,6 +48,10 @@ Modelling an outcome from predictors. The chapter covers **simple** and **multip
 ### Chapter 5 — Classification
 Predicting a category through the probability of each class. The chapter covers **naive Bayes**, **discriminant analysis**, **logistic regression** (the logit, the GLM, odds ratios, assessing the model), the **evaluation** of classifiers (confusion matrix, precision, recall, specificity, ROC curve, AUC, lift) and **strategies for imbalanced data** (undersampling, oversampling and weighting, SMOTE and ADASYN, cost-based classification, comparing the decision boundaries of different classifiers).
 *Key tools:* `scikit-learn`, `statsmodels`, `imbalanced-learn`, `pygam`, `dmba`.
+
+### Chapter 6 — Statistical Machine Learning
+Data-driven methods that assume little about the data and predict well. The chapter covers **K-nearest neighbors** (distance metrics, standardization, KNN as a feature engine), **tree models** (recursive partitioning, Gini impurity and entropy, stopping the tree), **bagging and the random forest** (bootstrap samples, the out-of-bag estimate, variable importance by accuracy decrease and by Gini decrease) and **boosting** with XGBoost (regularization, hyperparameters and cross-validation).
+*Key tools:* `scikit-learn`, `xgboost`, `dmba` (with Graphviz for the tree plot), `seaborn`.
 
 ---
 
