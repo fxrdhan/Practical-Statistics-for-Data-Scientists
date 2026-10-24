@@ -45,6 +45,6 @@ The notebook has, for every section, a summary in my own words, the theory behin
 
 - The official code ran with the versions printed by the setup cell, apart from the path of the data (it comes from the setup cell) and three changes marked `# CHANGED`: `model.params[0]` and `result_poly.params[2]` raise a `KeyError` in recent `pandas` and are replaced by `.iloc[0]` and `.iloc[2]`; `gam.gridsearch(X, y)` is called with `progress=False` to avoid a progress bar with the elapsed time.
 - Importing `dmba` selects the non-interactive `Agg` backend of Matplotlib when it finds no display, so the notebook has one extra cell (`%matplotlib inline`, not in the book) that shows the figures again.
-- `pygam` and `dmba` are not part of a standard Python installation; the setup cell installs them when they are missing (for example in Google Colab).
+- `pygam` and `dmba` are not part of a standard Python installation; the setup cell installs them when they are missing (a fresh environment, or Google Colab, may not have them).
 - The summaries of `statsmodels` print the date and the time of the run, and `pygam` warns that the p-values of its summary are unreliable.
 - The code and data of the official repository are under the GNU General Public License v3; the data are downloaded when the notebook runs and are not part of this repository.
