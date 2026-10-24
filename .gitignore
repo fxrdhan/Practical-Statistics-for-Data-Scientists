@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets of the official repository: the notebooks download them at run time
+# (the official repository is under the GNU General Public License v3, so they are not redistributed here)
+data/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

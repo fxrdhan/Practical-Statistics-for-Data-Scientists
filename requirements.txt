@@ -1,0 +1,12 @@
+# Notebooks were executed with: Python 3.12.3, NumPy 2.5.4, pandas 3.1.0, SciPy 1.16.3,
+# statsmodels 0.15.0, seaborn 0.13.2, Matplotlib 3.11.2, wquantiles 0.6
+# The code of the book was written for older releases; the lower bounds below are the oldest
+# versions on which the code is expected to work, the versions above are the ones actually tested.
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+statsmodels>=0.14
+matplotlib>=3.8
+seaborn>=0.13
+wquantiles>=0.6      # Chapter 1: weighted median
+jupyter
