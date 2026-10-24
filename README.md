@@ -20,7 +20,7 @@ The code of the book is taken from its official repository, `gedeck/practical-st
 | 01 | Exploratory Data Analysis | Done | [Chapter 1 notebook](Chapter_01_Exploratory_Data_Analysis/Chapter_01_Exploratory_Data_Analysis.ipynb) · [summary](Chapter_01_Exploratory_Data_Analysis/README.md) |
 | 02 | Data and Sampling Distributions | Done | [Chapter 2 notebook](Chapter_02_Data_and_Sampling_Distributions/Chapter_02_Data_and_Sampling_Distributions.ipynb) · [summary](Chapter_02_Data_and_Sampling_Distributions/README.md) |
 | 03 | Statistical Experiments and Significance Testing | Done | [Chapter 3 notebook](Chapter_03_Statistical_Experiments_and_Significance_Testing/Chapter_03_Statistical_Experiments_and_Significance_Testing.ipynb) · [summary](Chapter_03_Statistical_Experiments_and_Significance_Testing/README.md) |
-| 04 | Regression and Prediction | Planned | |
+| 04 | Regression and Prediction | Done | [Chapter 4 notebook](Chapter_04_Regression_and_Prediction/Chapter_04_Regression_and_Prediction.ipynb) · [summary](Chapter_04_Regression_and_Prediction/README.md) |
 | 05 | Classification | Planned | |
 | 06 | Statistical Machine Learning | Planned | |
 | 07 | Unsupervised Learning | Planned | |
@@ -40,6 +40,10 @@ How far can a sample be trusted? The chapter covers **random sampling and sample
 ### Chapter 3 — Statistical Experiments and Significance Testing
 Is a difference real, or could chance have produced it? The chapter covers the **A/B test** and random assignment, **hypothesis tests**, **resampling** with the permutation test, **statistical significance and p-values** with the two types of error, the **t-test**, **multiple testing**, **degrees of freedom**, **ANOVA** and the F-statistic, the **chi-square test** and Fisher's exact test, the **multi-arm bandit** algorithm, and **power and sample size**.
 *Key tools:* `scipy.stats`, `statsmodels` (ANOVA tables, power analysis, multiple-testing corrections), `pandas`, `Matplotlib`.
+
+### Chapter 4 — Regression and Prediction
+Modelling an outcome from predictors. The chapter covers **simple** and **multiple linear regression** (least squares, the King County house prices, assessing a model, cross-validation, stepwise selection, weighted regression), **prediction** with confidence and prediction intervals and the dangers of extrapolation, **factor variables** (dummy variables, many levels), the **interpretation** of the coefficients (correlated predictors, confounding, interactions), **regression diagnostics** (outliers, influential values, heteroskedasticity, partial residual plots), **polynomial and spline regression** with generalized additive models, and the lasso as additional material of the official repository.
+*Key tools:* `scikit-learn`, `statsmodels`, `pygam`, `dmba`, `seaborn`, `Matplotlib`.
 
 ---
 
