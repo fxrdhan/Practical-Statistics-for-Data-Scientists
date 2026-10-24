@@ -21,7 +21,7 @@ The code of the book is taken from its official repository, `gedeck/practical-st
 | 02 | Data and Sampling Distributions | Done | [Chapter 2 notebook](Chapter_02_Data_and_Sampling_Distributions/Chapter_02_Data_and_Sampling_Distributions.ipynb) · [summary](Chapter_02_Data_and_Sampling_Distributions/README.md) |
 | 03 | Statistical Experiments and Significance Testing | Done | [Chapter 3 notebook](Chapter_03_Statistical_Experiments_and_Significance_Testing/Chapter_03_Statistical_Experiments_and_Significance_Testing.ipynb) · [summary](Chapter_03_Statistical_Experiments_and_Significance_Testing/README.md) |
 | 04 | Regression and Prediction | Done | [Chapter 4 notebook](Chapter_04_Regression_and_Prediction/Chapter_04_Regression_and_Prediction.ipynb) · [summary](Chapter_04_Regression_and_Prediction/README.md) |
-| 05 | Classification | Planned | |
+| 05 | Classification | Done | [Chapter 5 notebook](Chapter_05_Classification/Chapter_05_Classification.ipynb) · [summary](Chapter_05_Classification/README.md) |
 | 06 | Statistical Machine Learning | Planned | |
 | 07 | Unsupervised Learning | Planned | |
 
@@ -44,6 +44,10 @@ Is a difference real, or could chance have produced it? The chapter covers the *
 ### Chapter 4 — Regression and Prediction
 Modelling an outcome from predictors. The chapter covers **simple** and **multiple linear regression** (least squares, the King County house prices, assessing a model, cross-validation, stepwise selection, weighted regression), **prediction** with confidence and prediction intervals and the dangers of extrapolation, **factor variables** (dummy variables, many levels), the **interpretation** of the coefficients (correlated predictors, confounding, interactions), **regression diagnostics** (outliers, influential values, heteroskedasticity, partial residual plots), **polynomial and spline regression** with generalized additive models, and the lasso as additional material of the official repository.
 *Key tools:* `scikit-learn`, `statsmodels`, `pygam`, `dmba`, `seaborn`, `Matplotlib`.
+
+### Chapter 5 — Classification
+Predicting a category through the probability of each class. The chapter covers **naive Bayes**, **discriminant analysis**, **logistic regression** (the logit, the GLM, odds ratios, assessing the model), the **evaluation** of classifiers (confusion matrix, precision, recall, specificity, ROC curve, AUC, lift) and **strategies for imbalanced data** (undersampling, oversampling and weighting, SMOTE and ADASYN, cost-based classification, comparing the decision boundaries of different classifiers).
+*Key tools:* `scikit-learn`, `statsmodels`, `imbalanced-learn`, `pygam`, `dmba`.
 
 ---
 
